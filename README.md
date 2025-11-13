@@ -176,4 +176,27 @@ $ npm start
 | GET | `/listar/post` | Lista os posts |
 
 
+---
+
+## Como iniciar a chamada de vídeo
+
+### Pré-requisitos:
+- Python 3.10+
+- pip (gerenciador de pacotes do Python)
+- Ngrok (para criar o link público da aplicação)
+
+### Instale as dependências do Python
+- cd frontend/videochat-webrtc
+- pip install -r requirements.txt
+
+### Inicie o servidor Flask
+- Na mesma pasta, execute: python server.py
+
+### Inicie o Ngrok
+- Abra outro terminal (sem parar o Flask) e digite: ngrok http 5000
+- O Ngrok gerará um link como: "Forwarding  https://xxxxx.ngrok.io  -> http://localhost:5000"
+- Esse link público do Ngrok é o que você deve compartilhar com o outro usuário para que ele possa participar da videochamada.
+
+---
+
 **Desenvolvido por Mariano Matte Viegas**
