@@ -1,22 +1,5 @@
 # Basketeenprev - Projeto Profissional
 
-Tabela de conteúdos
-
-=================
-
-<!--ts-->
-   * [Tema do Projeto](#tema)
-   * [Sobre](#sobre)
-   * [Objetivos](#objetivos)
-   * [Tecnologias utilizadas](#tecnologias)
-   * [Estrutura do Projeto](#estrutura)
-   * [Pré-requisitos](#pre-requisitos)
-   * [Instalação](#instalacao)
-   * [Como usar](#como-usar)
-   * [Testando as API](#testando-api)
-   * [Funcionalidades implementadas](#funcionalidades)
-<!--te-->
-
 
 ## 1. Tema do Projeto
 
