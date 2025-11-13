@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../imagens/logo.png" alt="Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <form id="loginForm">
+            <div class="basketIcon"><i class="fa-solid fa-basketball fa-bounce fa-2xl" style="--fa-bounce-land-scale-x: 1.2;--fa-bounce-land-scale-y: .8;--fa-bounce-rebound: 5px;"></i></div>
+
+            <h1 class="titulo">Login</h1>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+          
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+          
+            <button type="submit" onclick="logar(event)" class="botao">Logar</button>
+
+            <div class="link"><a href="../Cadastro/cadastro.html">Não possui uma conta? Cadastre-se!</a></div>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+    <script src="../paginaInicial/script.js"></script>
+    <script src="../login/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,195 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: #FF6F00;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    border-radius: 25px;
+}
+
+main{
+    background-color: #2A3434;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background-color: #FF6F00;
+    height: 8vh;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 450px;
+    margin: auto;
+    padding: 25px;
+    background-color: #F2B33D;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    height: 55vh;
+
+}
+
+label {
+    display: block;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f9fafb;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #FF6F00; /* Muda a borda ao clicar para escrever as informações para logar */
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 1.5vh;
+    background-color: #F09F58;
+    color: #000000;
+    border: 1px solid black;
+    border-radius: 10em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ee8223;
+    transform: scale(1.02);
+}
+
+.icones{
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.basketIcon{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-bottom: 2.5vh;
+}
+
+.titulo{
+    color: #fff;
+}
+
+
+.botao{
+    border-radius: 60px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5vh;
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+}
+
+.link a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ---------------------------------- */
+
+/* Responsividade */
+
+/* Telas médias (até 1440px de largura) */
+@media (max-width: 1440px) {
+    form {
+        max-width: 420px;
+        padding: 22px;
+    }
+}
+
+/* Telas pequenas (até 1280px de largura) */
+@media (max-width: 1280px) {
+    form {
+        max-width: 380px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Telas grandes (até 1600px de largura) */
+@media (min-width: 1600px) {
+    main {
+        padding: 2rem;
+    }
+
+    form {
+        max-width: 500px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Telas muito pequenas  (até 768px de largura) */
+
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .botao {
+        width: 100%;
+        margin-left: 0;
+    }
+}

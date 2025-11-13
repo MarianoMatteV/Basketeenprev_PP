@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do usuário</title>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Basketeenprev</h1>
+             <!-- <div>
+                <img src="../imagens/logo.png" alt="Logo" class="logo">
+            </div> -->
+        </div>
+        <div class="voltar">
+            <a href="../paginaInicial/index.html"><i class="fa-solid fa-arrow-left fa-3x"></i></a>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div id="Informacoes" class="description"></div>
+        </div>
+        <div class="div-botoes">
+            <button id="botaoEditar">Editar</button>
+            <button onclick="remover(event)">Excluir</button>
+        </div>
+    </main>
+    <!-- <button class="botaoEditar">Salvar</button> -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>Editar Usuario</h2>
+            <form>
+                <div class="modal-field">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="modal-field">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha">
+                </div>
+                <button class="botaoEditar" onclick="edit(event)">Salvar</button>
+            </form>
+        </div>
+    </div>
+
+    </div>
+
+
+    <script src="usuario.js"></script>
+    <script src="https://kit.fontawesome.com/8a3618c51f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

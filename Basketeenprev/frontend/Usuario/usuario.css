@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap');
+
+/* :root {
+    --cor-texto: #0B3142;
+    --cor-botoes: #78832d;
+    --cor-card: #345511;
+    --cor-caixa: #60712F;
+    --cor-fundo: #FFFFF2;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Geist Mono", monospace;
+    background-color: #2A3434;
+}
+
+header {
+    position: relative;
+    height: 70px;
+    background-color: #FF6F00;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3px;
+}
+
+/* .logo{
+    height: 100px;
+    width: auto;
+    border-radius: 25px;
+} */
+
+.voltar a {
+    text-decoration: none;
+}
+
+.voltar i {
+    color: #92460c;
+}
+
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    background-color: #f77a1b;
+    padding: 40px 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 25vw;
+}
+
+.div-botoes{
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 130px;
+}
+
+.div-botoes button{
+    padding: 20px 50px;
+    background-color: #e77c29;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .9rem;
+    color: white;
+}
+
+.description h2 {
+    margin: 5px 0;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #F09F58;
+    transform: scale(1.02);
+}
+
+/* MODAL */
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.modal-content {
+    background-color: #e77c29;
+    margin: 10% auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 700px;
+
+}
+
+.close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.modal-field label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    border: none;
+    /* Remove border */
+    width: auto;
+    /* Remove fixed width */
+    padding: 0;
+}
+
+.modal-field input {
+    border: 1px solid #888;
+    padding: 8px;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.botaoEditar {
+    background-color: #fdb26f;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 10rem;
+    margin-left: 14rem;
+    margin-top: 2rem;
+}
+
+/* ------------------- */
+
+/* RESPONSIVIDADE */
+
+/* até 1600px */
+@media (max-width: 1600px) {
+  .container {
+    width: 30vw;
+    gap: 30px;
+  }
+
+  .div-botoes {
+    gap: 100px;
+  }
+
+  .botaoEditar {
+    margin-left: 12rem;
+  }
+}
+
+/* até 1440px */
+@media (max-width: 1440px) {
+  header {
+    height: 65px;
+    padding: 0 1.5vw;
+  }
+
+  .titulo {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    width: 35vw;
+    padding: 30px 15px;
+    gap: 25px;
+  }
+
+  .div-botoes {
+    gap: 90px;
+  }
+
+  .div-botoes button {
+    padding: 18px 40px;
+    font-size: 1rem;
+  }
+
+  .botaoEditar {
+    margin-left: 10rem;
+  }
+}
+
+/* até 1280px */
+@media (max-width: 1280px) {
+  header {
+    height: 60px;
+  }
+
+  .titulo {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    width: 40vw;
+    padding: 25px 10px;
+    gap: 20px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .div-botoes {
+    gap: 70px;
+  }
+
+  .div-botoes button {
+    padding: 15px 35px;
+  }
+
+  .botaoEditar {
+    margin-left: 8rem;
+  }
+}
+
+/* até 1000px */
+@media (max-width: 1000px) {
+  header {
+    height: 55px;
+    padding: 0 1rem;
+  }
+
+  .titulo {
+    font-size: 1.3rem;
+  }
+
+  .container {
+    width: 50vw;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .div-botoes {
+    gap: 60px;
+  }
+
+  .div-botoes button {
+    padding: 14px 30px;
+    font-size: 0.95rem;
+  }
+
+  .botaoEditar {
+    margin-left: 6rem;
+  }
+}
+
+/* até 768px (notebooks pequenos) */
+@media (max-width: 768px) {
+  header {
+    height: 50px;
+    padding: 0 1rem;
+  }
+
+  .titulo {
+    font-size: 1.2rem;
+  }
+
+  .container {
+    width: 60vw;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .div-botoes {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .div-botoes button {
+    padding: 12px 25px;
+    font-size: 0.9rem;
+  }
+
+  .modal-content {
+    width: 85%;
+  }
+
+  .botaoEditar {
+    width: 8rem;
+    margin-left: 0;
+    margin-top: 1.5rem;
+  }
+}

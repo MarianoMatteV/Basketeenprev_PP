@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    background-color: #FF6F00;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    background-color: #2A3434;
+    min-height: 100vh;
+    padding: 2rem 0;
+}
+
+footer{
+    background-color: #FF6F00;
+    height: 5vh;
+}
+
+.icones{
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.icones_direita{
+    margin-left: 45vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3vw;
+}
+
+.contatos{
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #FF6F00;
+}
+
+.subtitle{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+/* ------------------------------------- */
+
+/* Barra de pesquisa */
+
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+    border: none;
+    color: #646464;
+    padding: 0.7vw 1vw;
+    border-radius: 30px;
+    width: 15vw;
+    transition: all ease-in-out .5s;
+    margin-right: -5vh;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    border: none;
+    background-color: #f4f2f2;
+    margin-top: 1vh;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+  }
+
+  /* ------------------------------- */
+
+  table {
+    border-collapse: collapse !important;
+    width: 100%;
+    max-width: 70vw;
+    background-color: transparent;
+    border: 2px solid white;
+  }
+
+  
+  th, td {
+    border: 2px solid white !important; 
+    padding: 1rem;
+    text-align: left;
+    color: white;
+    min-width: 100px;
+  }
+
+  .tabela-lesoes {
+    display: flex;
+    justify-content: center;
+    padding: 0 1vw;
+    margin-bottom: 3vh;
+  }
+  
+
+  /* .tabela-lesoes {
+    display: flex;
+    justify-content: center;
+    padding: 0 1vw;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid white;
+  }
+
+  tr{
+    border: 2px solid white;
+    border-bottom: 1px solid white;
+    padding: 8px;
+  }
+  
+  th {
+    border: 2px solid white;
+    padding: 0.5vw;
+    text-align: left;
+    color: white;
+    background-color: aqua;
+  }
+
+  td {
+    border: 2px solid white;
+    padding: 0.5vw;
+    text-align: left;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  
+  th {
+    background-color: transparent;
+    font-weight: bold;
+    border: 1px solid white;
+  }
+   */
+
+   /* --------------------------------------- */
+
+   /* RESPONSIVIDADE */
+
+   /* Até 1600px */
+@media (max-width: 1600px) {
+  .icones_direita {
+    margin-left: 40vw;
+    gap: 2.5vw;
+  }
+
+  .search__input {
+    width: 18vw;
+  }
+
+  table {
+    max-width: 75vw;
+  }
+}
+
+/* Até 1440px */
+@media (max-width: 1440px) {
+  .icones_direita {
+    margin-left: 38vw;
+    gap: 2vw;
+  }
+
+  .search__input {
+    width: 20vw;
+  }
+
+  table {
+    max-width: 80vw;
+  }
+
+  th,
+  td {
+    padding: 0.9rem;
+  }
+}
+
+/* Até 1280px */
+@media (max-width: 1280px) {
+  .icones_direita {
+    margin-left: 30vw;
+    gap: 1.8vw;
+  }
+
+  .search__input {
+    width: 25vw;
+    margin-right: 0;
+  }
+
+  table {
+    max-width: 85vw;
+  }
+
+  th,
+  td {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+/* Até 1000px (notebooks menores) */
+@media (max-width: 1000px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .icones_direita {
+    margin-left: 0;
+    justify-content: center;
+    gap: 2vw;
+  }
+
+  .search__input {
+    width: 35vw;
+    margin: 1vh auto;
+    display: block;
+  }
+
+  .search__button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  table {
+    max-width: 90vw;
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+  }
+}
