@@ -95,7 +95,7 @@ Basketeenprev/
 
 ```bash
 # Clone este repositório
-$ git clone <>
+$ git clone <"https://github.com/MarianoMatteV/Basketeenprev_PP.git">
 
 # Acesse a pasta do projeto no terminal/cmd
 $ cd basketeenprev
